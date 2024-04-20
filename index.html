@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEATHER APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About This us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pune</a></li>
+                            <li><a class="dropdown-item" href="#">Delhi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Banganlor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <din class="contener">
+        <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Temperatures</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><!--<span id="temp2"></span>--><small
+                                    class="text-body-secondary fw-light"> &degC </small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temaperature is <span id="temp"></span> </li>
+                                <li>Min Temaperature is <span id="min_temp"></span></li>
+                                <li>Max Temaperature is <span id="max_temp"></span></li>
+
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                            <div class="wob_df" data-wob-di="2" role="button" tabindex="0"
+                                data-ved="2ahUKEwin6s3AztCFAxW_9jgGHeTyD84Qi2soAnoECAYQDA" fdprocessedid="4cfkmn">
+                                <div class="Z1VzSb" aria-label="Monday">Today TEMP</div>
+                                <div class="DxhUm"><g-img class="uW5pk"><img id="dimg_5"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAQBJRE
+                                 FUaN7t2csNwyAMBmBGYYSMwhgdgxEYjRW6ARu4HNyqB0CKednElf5b2/hLSALGAICRHKMABSjgUMDdD7xfLifkxByoJOJ33O3/nwHIhVgsKDWKriXhb+0WQD6wJxZegvh
+                                 lADzrcUDhpeFlpwLyAa5BZ711Na4pgAXFNxFdABw2K4r/R9iRgLiw+N89MQSATxvYFN8F2DB0qkOJCggbi/8m9AASA0AiAXBuA0ziKIDACBAogMgIECkAYBUFKEABzwOI
+                                 f4yKf5HJnkqIn8wxmk775y5oxC8pj1jUH9FWEd/YOqK1eERz94j2euFqUCF7NzjYbzHpLqUCFKCAJfkAq7RimK7qUtAAAAAASUVORK5CYII=" class="YQ4gaf zr758c"
+                                            alt="Sunny" data-csiid="12" data-atf="1"></g-img></div>
+                                <div class="wNE31c">
+                                    <div class="gNCp2e">
+                                        <span class="wob_t" style="display:inline">
+                                            <h2><span id="temp2"></span>
+                                        </span><small class="text-body-secondary fw-light">&degC</small><span
+                                            class="wob_t" style="display:none"></span>
+                                    </div>
+                                    <div class="QrNVmd ZXCv8e"><span class="wob_t" style="display:inline"></span></h2>
+                                        <span class="wob_t" style="display:none">44</span></div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Humidity Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><!--<span id="humidity2"></span>--><small
+                                    class="text-body-secondary fw-light">%</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Cloud PTC is <span id="cloud_pct"></span></li>
+                                <li>Feels Like is <span id="feels_like"></span></li>
+                                <li>Humidity is <span id="humidity"></span></li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+                            <div class="wob_df wob_ds" data-wob-di="3" role="button" tabindex="0"
+                                data-ved="2ahUKEwin6s3AztCFAxW_9jgGHeTyD84Qi2soA3oECAYQDQ" fdprocessedid="vosj1">
+                                <div class="Z1VzSb" aria-label="Tuesday">Today Humi</div>
+                                <div class="DxhUm"><g-img class="uW5pk"><img id="dimg_7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAdVJREF
+                                UaN7tmc1thDAQRimBElwCJVBCSvAxR5fgEiiBEiiBErhyIx24A2cc2WhiAf4ZA1rJkZ4UZZPN9/AwHrON1rr5ZJoqUAWqQBWoAlWgxJf++WaAAGZAAdpD2dfM7zDS/yop
+                                AGE6YDoIHMLIdK8KQIAWGIAtQ8Bh/r59bQWQjCBILCkSJIF1XVuAA9Jivm9ROd0ukS0AQTtgA7SH+Vn31EoEBSAMA2YUUAHiJDyWcCtBuidIArZEroJewVEpjQSJjiIgMs
+                                MbpHdjf53sCcEWSxEYCQKOyZQhkshZBZYkYEtHeLVPQSGJnHIS0QI2/FIo+L+VILTXOUVA3BD+D3Q/pAqoFIEebUxFQQLJN/Ojo0TEqDG/JgBv1hdgeVNAP4CKPSvkCKi
+                                CQc1KSMRs2+x902hO/Z4cYFhgWOQHY8zo9hOKgCCGH71BEXcqHjEBKDft5gowypVH4YeLgKE9ZSO10cxz7z7TFJqxOEUgZxyYbPi+0M4uSRuZPYCnCPBA6TwrYCWWyFbJ
+                                Imo/FTMpM6pAG5CYvDO0LDii7x2JNAtdSGxuQyp41Q87UqkHW8NJzYsbw+8d6Y5Hi+7qbw8IyOIPd9HRVD8qUD8fqAJVoApUgSrwqfwCJ6xaZshM+xMAAAAASUVORK5CY
+                                II=" class="YQ4gaf zr758c" alt="Partly Cloudy" data-csiid="13" data-atf="1"></g-img>
+                                </div>
+                                <div class="wNE31c">
+                                    <div class="gNCp2e">
+                                        <span class="wob_t " style="display:inline">
+                                            <h2><span id="humidity2"></span>
+                                        </span><span class="wob_t" style="display:none">59</span><small
+                                            class="text-body-secondary fw-light">%</small>
+                                    </div>
+                                    </h2>
+                                    <div class="QrNVm
+                                d ZXCv8e"><span class="wob_t" style="display:inline"></span><span class="wob_t"
+                                            style="display:none">51</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary" id="">
+                            <h4 class="my-0 fw-normal">Wind Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><!--<span id="wind_speed2"></span>--><small
+                                    class="text-body-secondary fw-light">Km/h</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <!-- <li>Wind degree is <span id="wind_degrees"></span></li> -->
+                                <li>Wind seep is <span id="wind_speed"></span></li>
+                                <li>Sunrise Time is <span id="sunrise"></span></li>
+                                <li>Sunset Time is <span id="sunset"></span></li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
+                            <div class="wob_df wob_ds" data-wob-di="3" role="button" tabindex="0"
+                                data-ved="2ahUKEwin6s3AztCFAxW_9jgGHeTyD84Qi2soA3oECAYQDQ" fdprocessedid="vosj1">
+                                <div class="Z1VzSb" aria-label="Tuesday">Today wind speed</div>
+                                <h2 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
+                                        class="text-body-secondary fw-light">Km/h</small></h2>
+                                <div class="DxhUm"></div>
+                                <div class="wNE31c">
+                                    <div class="gNCp2e">
+                                        <span class="wob_t " style="display:inline"></span><span class="wob_t"
+                                            style="display:none">59</span><small
+                                            class="text-body-secondary fw-light"></small>
+                                    </div>
+                                    </h2>
+                                    <div class="QrNVm
+                                d ZXCv8e"><span class="wob_t" style="display:inline"></span><span class="wob_t"
+                                            style="display:none">51</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+            <h2 class="display-6 text-center mb-4">Same Weather In Different City </h2>
+
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <!-- <th style="width: 34%;"></th>
+                            <th style="width: 22%;"> Cloud_pct</th>
+                            <th style="width: 22%;"> Feels_like</th>
+                            <th style="width: 22%;"> Humidity</th>
+                            <th style="width: 22%;"> Max_temp</th>
+                            <th style="width: 22%;"> Min_temp</th>
+                            <th style="width: 22%;"> Sunrise</th>
+                            <th style="width: 22%;"> Sunset</th>
+                            <th style="width: 22%;"> Temp</th>
+                            <th style="width: 22%;"> Wind_degrees</th>
+                            <th style="width: 22%;"> Wind_speed</th> -->
+                        </tr>
+                    </thead>
+                    <div class="my-4 text-center">
+
+                        <th scope="row" class="text-start">Nagpur</th>
+                        <th scope="row" class="text-start">Mumbai</th>
+                        <th scope="row" class="text-start">chennai</th>
+                        <th scope="row" class="text-start">Kanniyakumari</th>
+                        <th scope="row" class="text-start">Pune</th>
+
+
+
+                        </tbody>
+                </table>
+            </div>
+        </main>
+    </din>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
